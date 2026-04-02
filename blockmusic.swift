@@ -14,7 +14,8 @@ NSWorkspace.shared.runningApplications.forEach(terminateIfBlocklisted)
 // Watch for any app launch, terminate if it's blocklisted
 NSWorkspace.shared.notificationCenter.addObserver(
     forName: NSWorkspace.willLaunchApplicationNotification, object: nil, queue: .main
-) { notification in
+) {
+    notification in
     guard let app = notification.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication else { return }
     terminateIfBlocklisted(app)
 }

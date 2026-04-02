@@ -18,7 +18,7 @@ But if you're like me and want something in-between — no config, out of sight,
 
 ## ✨ Why `blockmusic`?
 
-- 🎯 **Dead Simple:** 24 lines of Swift (including 4 helpful comments). No UI, no config, no deps, no bloat — good defaults, does one thing and does it well.
+- 🎯 **Dead Simple:** [24 lines of Swift](https://github.com/kevduc/blockmusic/blob/main/blockmusic.swift) (including 4 helpful comments). No UI, no config, no deps, no bloat — good defaults, does one thing and does it well.
 - 🔍 **Fully Auditable:** Review the entire codebase in under a minute.
 - ⚡ **Zero Overhead:** Event-driven with native macOS APIs, 0% CPU while idle.
 - 🧘 **No SIP Disabling:** Works on modern macOS without bypassing System Integrity Protection.
@@ -35,7 +35,7 @@ curl -sfSL https://raw.githubusercontent.com/kevduc/blockmusic/main/install.sh |
 
 ### From source
 
-A local install script is provided if you'd rather audit and build the code yourself:
+A local install script is provided if you'd rather audit and build the code yourself ([view script](https://github.com/kevduc/blockmusic/blob/main/install-local.sh)):
 
 ```sh
 git clone https://github.com/kevduc/blockmusic.git
@@ -72,6 +72,8 @@ or grab it from the [latest release](https://github.com/kevduc/blockmusic/releas
 ```sh
 ./blockmusic
 ```
+
+Note: this runs in the foreground and stops when you close the terminal. For a persistent background daemon, look at the [installation](#-installation) method above.
 
 ## 💡 Acknowledgements
 
