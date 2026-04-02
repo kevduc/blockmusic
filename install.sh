@@ -8,7 +8,7 @@ PLIST="$HOME/Library/LaunchAgents/com.user.blockmusic.plist"
 # 1. Download binary and verify integrity
 mkdir -p "$(dirname "$BIN")"
 curl -sfSL "https://github.com/kevduc/blockmusic/releases/latest/download/blockmusic" -o "$BIN.tmp"
-echo "$SHA  $BIN.tmp" | shasum -a 256 -c || {
+echo "$SHA  $BIN.tmp" | shasum -a 256 -c -q || {
     rm -f "$BIN.tmp";
     echo "SHA-256 mismatch";
     exit 1;
