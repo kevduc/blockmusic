@@ -2,6 +2,14 @@
 
 A minimalist, zero-dependency, 0% CPU background daemon for macOS that kills Apple Music (and iTunes) on startup, and stops it from automatically relaunching when you press media controls (e.g. on Bluetooth headphones, keyboard media keys, etc.).
 
+### 🔇 Bluetooth Only?
+
+If Apple Music only bothers you when connecting Bluetooth devices, you can disable it directly in macOS settings — no tools needed:
+
+**System Settings** > **Privacy & Security** > **Bluetooth** > **Click `+`** > **Add `Music`** from **Applications** > **Toggle to disabled**
+
+([source](https://www.reddit.com/r/MacOS/comments/1dkhzh0/comment/m9vpit2/))
+
 ## 🪓 The Simplest Fix?
 
 If you're a minimalist at heart, the bare minimum might be all you need:
